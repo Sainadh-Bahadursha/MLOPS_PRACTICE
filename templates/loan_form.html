@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loan Application</title>
+</head>
+<body>
+    <h1>Loan Application Form</h1>
+    <form action="/predict" method="post">
+        <label for="gender">Gender:</label><br>
+        <select name="Gender" id="gender">
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+        </select><br><br>
+
+        <label for="married">Married:</label><br>
+        <select name="Married" id="married">
+            <option value="No">No</option>
+            <option value="Yes">Yes</option>
+        </select><br><br>
+
+        <label for="ApplicantIncome">Applicant Income:</label><br>
+        <input type="number" name="ApplicantIncome" required><br><br>
+
+        <label for="LoanAmount">Loan Amount:</label><br>
+        <input type="number" name="LoanAmount" required><br><br>
+
+        <label for="Credit_History">Credit History:</label><br>
+        <input type="number" name="Credit_History" min="0" max="1" required><br><br>
+
+        <input type="submit" value="Submit">
+    </form>
+
+    {% if prediction_result %}
+    <h2>Loan Application Status: {{ prediction_result }}</h2>
+    {% endif %}
+</body>
+</html>
