@@ -382,4 +382,113 @@ C:\Users\saina\Desktop\DS_ML_AI\Scaler\Module_17_MLOPS\MLOPS_GIT\MLOPS_PRACTICE\
 
 (mlops_venv) C:\Users\saina\Desktop\DS_ML_AI\Scaler\Module_17_MLOPS\MLOPS_GIT\MLOPS_PRACTICE>
 
+# loan app ml model training ipynb
 
+(mlops_venv) C:\Users\saina\Desktop\DS_ML_AI\Scaler\Module_17_MLOPS\MLOPS_GIT\MLOPS_PRACTICE>git commit -am "modified txt"
+
+(mlops_venv) C:\Users\saina\Desktop\DS_ML_AI\Scaler\Module_17_MLOPS\MLOPS_GIT\MLOPS_PRACTICE>pip install numpy pandas
+Collecting numpy
+  Using cached numpy-2.1.1-cp312-cp312-win_amd64.whl.metadata (59 kB)
+Collecting pandas
+  Using cached pandas-2.2.2-cp312-cp312-win_amd64.whl.metadata (19 kB)
+Requirement already satisfied: python-dateutil>=2.8.2 in c:\users\saina\desktop\ds_ml_ai\scaler\module_17_mlops\mlops_git\mlops_practice\mlops_venv\lib\site-packages (from pandas) (2.9.0.post0)
+Collecting pytz>=2020.1 (from pandas)
+  Downloading pytz-2024.2-py2.py3-none-any.whl.metadata (22 kB)
+Collecting tzdata>=2022.7 (from pandas)
+  Using cached tzdata-2024.1-py2.py3-none-any.whl.metadata (1.4 kB)
+Requirement already satisfied: six>=1.5 in c:\users\saina\desktop\ds_ml_ai\scaler\module_17_mlops\mlops_git\mlops_practice\mlops_venv\lib\site-packages (from python-dateutil>=2.8.2->pandas) (1.16.0)
+Using cached numpy-2.1.1-cp312-cp312-win_amd64.whl (12.6 MB)
+Using cached pandas-2.2.2-cp312-cp312-win_amd64.whl (11.5 MB)
+Downloading pytz-2024.2-py2.py3-none-any.whl (508 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 508.0/508.0 kB 3.5 MB/s eta 0:00:00
+Using cached tzdata-2024.1-py2.py3-none-any.whl (345 kB)
+Installing collected packages: pytz, tzdata, numpy, pandas
+Successfully installed numpy-2.1.1 pandas-2.2.2 pytz-2024.2 tzdata-2024.1
+
+[notice] A new release of pip is available: 24.0 -> 24.2
+[notice] To update, run: python.exe -m pip install --upgrade pip
+
+
+(mlops_venv) C:\Users\saina\Desktop\DS_ML_AI\Scaler\Module_17_MLOPS\MLOPS_GIT\MLOPS_PRACTICE>pip install scikit-learn
+Collecting scikit-learn
+  Downloading scikit_learn-1.5.2-cp312-cp312-win_amd64.whl.metadata (13 kB)
+Requirement already satisfied: numpy>=1.19.5 in c:\users\saina\desktop\ds_ml_ai\scaler\module_17_mlops\mlops_git\mlops_practice\mlops_venv\lib\site-packages (from scikit-learn) (2.1.1)
+Collecting scipy>=1.6.0 (from scikit-learn)
+  Downloading scipy-1.14.1-cp312-cp312-win_amd64.whl.metadata (60 kB)
+     ━━━━━━━━━━━━━━━━━━ 60.8/60.8 kB 647.9 kB/s eta 0:00:00
+Collecting joblib>=1.2.0 (from scikit-learn)
+  Using cached joblib-1.4.2-py3-none-any.whl.metadata (5.4 kB)
+Collecting threadpoolctl>=3.1.0 (from scikit-learn)
+  Using cached threadpoolctl-3.5.0-py3-none-any.whl.metadata (13 kB)
+Downloading scikit_learn-1.5.2-cp312-cp312-win_amd64.whl (11.0 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━ 11.0/11.0 MB 3.8 MB/s eta 0:00:00
+Using cached joblib-1.4.2-py3-none-any.whl (301 kB)        
+Downloading scipy-1.14.1-cp312-cp312-win_amd64.whl (44.5 MB)
+   ━━╸━━━━━━━━━━━━━━━━━━━━ 5.7/44.5 MB 2.6 MB/s eta 0:00:16
+Using cached threadpoolctl-3.5.0-py3-none-any.whl (18 kB)  
+ERROR: THESE PACKAGES DO NOT MATCH THE HASHES FROM THE REQUIREMENTS FILE. If you have updated the package versions, please update the hashes. Otherwise, examine the package contents carefully; someone may have tampered with them.       
+    unknown package:
+        Expected sha256 2ff38e22128e6c03ff73b6bb0f85f897d2362f8c052e3b8ad00532198fbdae3f
+             Got        ae9d8bc512241a3143d90dfdd6ddc6e721f0348435a8078962c7da5c0eb6d484
+
+
+[notice] A new release of pip is available: 24.0 -> 24.2   
+[notice] To update, run: python.exe -m pip install --upgrade pip
+
+(mlops_venv) C:\Users\saina\Desktop\DS_ML_AI\Scaler\Module_17_MLOPS\MLOPS_GIT\MLOPS_PRACTICE>
+
+
+(mlops_venv) C:\Users\saina\Desktop\DS_ML_AI\Scaler\Module_17_MLOPS\MLOPS_GIT\MLOPS_PRACTICE>pip install flask
+Collecting flask
+  Using cached flask-3.0.3-py3-none-any.whl.metadata (3.2 kB)
+Collecting Werkzeug>=3.0.0 (from flask)
+  Downloading werkzeug-3.0.4-py3-none-any.whl.metadata (3.7 kB)
+Collecting Jinja2>=3.1.2 (from flask)
+  Using cached jinja2-3.1.4-py3-none-any.whl.metadata (2.6 kB)
+Collecting itsdangerous>=2.1.2 (from flask)
+  Using cached itsdangerous-2.2.0-py3-none-any.whl.metadata (1.9 kB)
+Collecting click>=8.1.3 (from flask)
+  Using cached click-8.1.7-py3-none-any.whl.metadata (3.0 kB)
+Collecting blinker>=1.6.2 (from flask)
+  Using cached blinker-1.8.2-py3-none-any.whl.metadata (1.6 kB)
+Requirement already satisfied: colorama in c:\users\saina\desktop\ds_ml_ai\scaler\module_17_mlops\mlops_git\mlops_practice\mlops_venv\lib\site-packages (from click>=8.1.3->flask) (0.4.6)
+Collecting MarkupSafe>=2.0 (from Jinja2>=3.1.2->flask)
+  Using cached MarkupSafe-2.1.5-cp312-cp312-win_amd64.whl.metadata (3.1 kB)
+Using cached flask-3.0.3-py3-none-any.whl (101 kB)
+Using cached blinker-1.8.2-py3-none-any.whl (9.5 kB)       
+Using cached click-8.1.7-py3-none-any.whl (97 kB)
+Using cached itsdangerous-2.2.0-py3-none-any.whl (16 kB)   
+Using cached jinja2-3.1.4-py3-none-any.whl (133 kB)        
+Downloading werkzeug-3.0.4-py3-none-any.whl (227 kB)
+   ━━━━━━━━━━━━━━━━━━━━ 227.6/227.6 kB 1.5 MB/s eta 0:00:00
+Using cached MarkupSafe-2.1.5-cp312-cp312-win_amd64.whl (17 kB)
+Installing collected packages: MarkupSafe, itsdangerous, click, blinker, Werkzeug, Jinja2, flask
+Successfully installed Jinja2-3.1.4 MarkupSafe-2.1.5 Werkzeug-3.0.4 blinker-1.8.2 click-8.1.7 flask-3.0.3 itsdangerous-2.2.0
+
+[notice] A new release of pip is available: 24.0 -> 24.2   
+[notice] To update, run: python.exe -m pip install --upgrade pip
+
+(mlops_venv) C:\Users\saina\Desktop\DS_ML_AI\Scaler\Module_17_MLOPS\MLOPS_GIT\MLOPS_PRACTICE>
+
+ kB)
+
+(mlops_venv) C:\Users\saina\Desktop\DS_ML_AI\Scaler\Module_17_MLOPS\MLOPS_GIT\MLOPS_PRACTICE>pip install pytest
+Collecting pytest
+  Downloading pytest-8.3.3-py3-none-any.whl.metadata (7.5 kB)
+Collecting iniconfig (from pytest)
+  Using cached iniconfig-2.0.0-py3-none-any.whl.metadata (2.6 kB)
+Requirement already satisfied: packaging in c:\users\saina\desktop\ds_ml_ai\scaler\module_17_mlops\mlops_git\mlops_practice\mlops_venv\lib\site-packages (from pytest) (24.1)
+Collecting pluggy<2,>=1.5 (from pytest)
+  Using cached pluggy-1.5.0-py3-none-any.whl.metadata (4.8 kB)
+Requirement already satisfied: colorama in c:\users\saina\desktop\ds_ml_ai\scaler\module_17_mlops\mlops_git\mlops_practice\mlops_venv\lib\site-packages (from pytest) (0.4.6)    
+Downloading pytest-8.3.3-py3-none-any.whl (342 kB)
+   ━━━━━━━━━━━━━━━━━━━━ 342.3/342.3 kB 1.8 MB/s eta 0:00:00
+Using cached pluggy-1.5.0-py3-none-any.whl (20 kB)
+Using cached iniconfig-2.0.0-py3-none-any.whl (5.9 kB)     
+Installing collected packages: pluggy, iniconfig, pytest
+Successfully installed iniconfig-2.0.0 pluggy-1.5.0 pytest-8.3.3
+
+[notice] A new release of pip is available: 24.0 -> 24.2   
+[notice] To update, run: python.exe -m pip install --upgrade pip
+
+(mlops_venv) C:\Users\saina\Desktop\DS_ML_AI\Scaler\Module_17_MLOPS\MLOPS_GIT\MLOPS_PRACTICE>
