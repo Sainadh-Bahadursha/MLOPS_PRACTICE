@@ -10,5 +10,5 @@ RUN pip install --no-cache-dir -r requirements.txt
 
 COPY . .
 
-# CMD ["python","-m","flask","--app","predictions.py","run","--host=0.0.0.0"]
-CMD ["python","-m","flask","--app","predictions_with_html.py","run","--host=0.0.0.0"]
+CMD ["python","-m","flask","--app","predictions.py","run","--host=0.0.0.0"]
+# CMD ["python","-m","flask","--app","predictions_with_html.py","run","--host=0.0.0.0"]
