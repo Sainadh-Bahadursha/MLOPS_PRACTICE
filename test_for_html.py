@@ -28,7 +28,7 @@ def test_predictions(client):
     test_data = {
         'Gender': 'Male',
         'Married': 'Yes',
-        'ApplicantIncome': '50000',  # Values should be strings as form data
+        'ApplicantIncome': '5000000',  # Values should be strings as form data
         'LoanAmount': '5000',
         'Credit_History': '1'
     }
