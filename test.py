@@ -12,7 +12,7 @@ def client():
 def test_hello_world(client):
     resp = client.get("/")
     assert resp.status_code == 200
-    assert resp.json == "<p>Hello, World! - Version 1</p>"
+    assert resp == "<p>Hello, World! - Version 1</p>"
 
 # should check the response code is 200 - successful or not
 # should check output of pinger - "I am pinging"
