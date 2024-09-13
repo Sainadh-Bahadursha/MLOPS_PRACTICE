@@ -1,0 +1,38 @@
+
+# name of the workflow
+name: Running tests on push to main 
+# event is pushing something to main will triggers the event
+on:
+  push:
+    branches: [ "main" ]
+jobs:
+    build:
+        # running on ubuntu server
+        runs-on: ubuntu-latest
+    
+        steps:
+        # action/cheeckout will give access of our repository to the workflow. Use documentation
+        -   uses: actions/checkout@v4
+
+        # Whenever - is given it is treated as new entity
+        # Installing the python of version 3.9.13
+        -   name: Set up Python
+            uses: actions/setup-python@v4
+            with:
+                python-version: 3.9.13
+
+        # Installing all the library dependencies from requirements.txt        
+        -   name: Install Dependencies
+            run:
+                python -m pip install --upgrade pip
+                pip install -r requirements.txt
+        
+        # Run test cases on test.py
+        -   name: Run test cases on test.py
+            run:
+                pytest test.py
+        
+        # Run test cases on test_for_html.py
+        -   name: Run test cases on test_for_html.py
+            run:
+                pytest test_for_html.py
